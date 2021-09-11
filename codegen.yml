@@ -1,0 +1,17 @@
+overwrite: true
+schema: 'https://react-quiz.jobs.pyr.sh/graphql'
+documents:
+  - 'src/**/*.graphql'
+generates:
+  src/graphql/index.tsx:
+    config:
+      withComponent: false
+      withHOC: false
+      withHooks: true
+    plugins:
+      - 'typescript'
+      - 'typescript-operations'
+      - 'typescript-react-apollo'
+hooks:
+  afterOneFileWrite:
+    - prettier --write

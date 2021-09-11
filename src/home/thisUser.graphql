@@ -1,0 +1,6 @@
+query thisUser {
+  me {
+    name
+    avatar
+  }
+}

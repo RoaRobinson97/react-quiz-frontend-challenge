@@ -1,0 +1,5 @@
+node_modules
+*.d.ts
+build
+.tsOuts
+src/graphql/index.tsx
